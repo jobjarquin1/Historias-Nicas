@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HISTORIAS NICAS</title>
+</head>
+<body>
+    <!--Aqui es para la navegacion-->
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#linea-tiempo">Linea de Tiempo</a>
+        <a href="#galeria">Galería</a>
+    </nav>
+
+    <!--Seccion de incio por el momento-->
+    <section id="inicio"></section>
+    <script id="inicio">
+        //aqui cargo el contenido de la pagina
+        fetch('pages/inicio/index.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('inicio').innerHTML = html;
+            });
+    </script>
+
+
+    <!--Seccion de linea de tiempo por el momento-->
+    <section id="linea-tiempo"></section>
+
+    <!--Aqui va la galeria por el momento-->
+    <section id="galeria"></section>
+    <script id="galeria">
+        fetch('pages/galeri/index.html')
+            .then(response => response.text)
+            .then(html =>{
+                document.getElementById('galeri').innerText = html;
+            });
+    </script>
+
+
+
+
+
+
+
+    
+</body>
+</html>
